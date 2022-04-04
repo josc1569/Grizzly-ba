@@ -11,11 +11,9 @@ df1 = grizzly.read_table("events")
 df1 = df1[['theyear', 'numarticles']]
 df1 = df1[df1.theyear == 2014]
 df1.show(pretty=True)
-#df = df1.diff(mode='pandas')
 
-#print(df)
-
-#df = df1.cummin()
+df = df1.diff(mode='pandas')
+print(df)
 
 
 
